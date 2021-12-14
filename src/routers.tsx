@@ -9,7 +9,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export const Router = () => {
     return(
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Posts/>}/>
           <Route path="/weather" element={<Weather/>}/>
